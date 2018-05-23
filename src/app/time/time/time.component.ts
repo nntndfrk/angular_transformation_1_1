@@ -75,4 +75,4 @@ export class TimeComponent implements OnInit {
     }
   }
 
-};
+}

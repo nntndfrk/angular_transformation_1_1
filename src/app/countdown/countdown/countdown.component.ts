@@ -22,7 +22,6 @@ export class CountdownComponent implements OnInit {
     const currentMonth = this.date.getMonth();
     let startSummer = new Date(currentYear, 5, 1);
 
-    console.log(currentMonth);
 
     if (currentMonth >= 5 && currentMonth < 8) {
       this.status = 'Сейчас лето';
