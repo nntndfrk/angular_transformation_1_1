@@ -1,27 +1,14 @@
-# Countdown
+#### Задание
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+Необходимо реализовать 2 компонента. 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Один называется timeModule второй countdownModule. Заготовку для запуска приложения в Plunker или подобном сервисе можно взять из сессии №2. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Первый компонент (timeModule) внутри себя должен содержать код, который будет выводить текущую дату и время. На экран должна выводиться следующая информация "Здравствуйте, сегодня 19 мая 2017 года, текущее время 16:25. Время близится к ужину". 
+То есть кроме непосредственно вывода времени вам так же необходимо подставлять одну из трех возможных фраз. Правило следующие. если текущее время с 21:00 до 9:00 "С утра будет завтрак" если текущее время с 9:00 до 14:00 "Не пропустите обед" если текущее время с 14:00 до 21:00 "Время близится к ужину" 
 
-## Build
+Второй компонент countdownModule должен подключаться в коде первого. То есть его селектор должен быть в шаблоне первого компонента. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Второй компонент должен показывать сколько дней осталось до лета. Например "До лета осталось 15 дней."
