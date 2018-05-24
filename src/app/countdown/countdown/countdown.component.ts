@@ -27,11 +27,11 @@ export class CountdownComponent implements OnInit {
       this.status = 'Сейчас лето';
     } else if (currentMonth >= 8) {
       startSummer = new Date(currentYear + 1, 5, 1);
-      this.delta = startSummer - this.date;
+      this.delta = +startSummer - +this.date;
       this.status = `До лета осталось ${this.delta} дней.`;
     } else {
-      this.delta = Math.abs(parseInt((this.date - startSummer) / (24 * 3600 * 1000), 10));
-      this.status = `До лета осталось ${this.delta} дней.`;
+      this.delta = Math.abs((+this.date - (+startSummer)) / (24 * 3600 * 1000));
+      this.status = `До лета осталось ${parseInt(this.delta, 10)} дней.`;
     }
 
   }
